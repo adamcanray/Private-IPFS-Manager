@@ -38,5 +38,5 @@ This project is running well with alphine linux with arm base (`linux/arm64/v8`)
 
 ## Dev Note
 
-- In [preveous](https://github.com/adamcanray/Private-IPFS-Cluster-Data-Replication), manager and worker project is in one code base, we run with docker compose to simplify the automation, since currently the worker project is not on one code base anymore, we should run it in some steps (ex: running worker node manually, then run worker nodes and pointing it to the worker manually), see [Run](/#Run) section above.
+- In [previous](https://github.com/adamcanray/Private-IPFS-Cluster-Data-Replication), manager and worker project is in one code base, we run with docker compose to simplify the automation, since currently the worker project is not on one code base anymore, we should run it in some steps (ex: running worker node manually, then run worker nodes and pointing it to the worker manually), see [Run](/#Run) section above.
 - The `swarm.key`is should be confidential, we should generate new key for production.
