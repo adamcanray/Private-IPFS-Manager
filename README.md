@@ -25,10 +25,14 @@ This repository is for IPFS Manager Node.
    docker exec -it ipfs_manager_container_n0 /bin/sh
    ```
 4. Start the ipfs daemon
+
    ```bash
+   rc-status -a
+   rc-service ipfs start
    touch /run/openrc/softlevel
+   rc-service ipfs restart
    rc-update add ipfs default
-   rc-service ipfs start --dry-run
+   sleep 1
    rc-status -a
    ```
 
