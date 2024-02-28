@@ -38,9 +38,6 @@ echo "[ipfs-setup] Swarm key is copied to ~/.ipfs/swarm.key"
 cd /
 
 # IPFS Daemon
-echo "[ipfs-setup] Start IPFS Daemon"
-bash ./ipfs-daemon.sh
-echo "[ipfs-setup] IPFS Daemon started"
 
 # Disable debugging output
 set +x
