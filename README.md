@@ -1,6 +1,6 @@
 # IPFS Manager Node
 
-This repository is for IPFS Manager Node.
+This [branch](https://github.com/ParallaxNetwork/private-ipfs-manager/tree/without-config) is not using scripts that automate setup for the ipfs config (including bootstrapping), so you should setup the config manually, and put it in the right place.
 
 ## Run
 
@@ -25,26 +25,6 @@ This repository is for IPFS Manager Node.
 ### About project
 
 This project is running well with alphine linux with arm base (`linux/arm64/v8`), if you run this project using different distribution, maybe you should adjust some scripts or service config (ex: `services/ipfs`, etc).
-
-### Porject Debugging
-
-If the ipfs daemon is not running, we can start it manually for each node with `rc-service ipfs start` command. First, we should exec into the container
-
-```bash
-docker exec -it <name> /bin/sh
-```
-
-then start the ipfs daemon.
-
-```bash
-rc-status -a
-rc-service ipfs start
-touch /run/openrc/softlevel
-rc-service ipfs restart
-rc-update add ipfs default
-sleep 1
-rc-status -a
-```
 
 ## Notes
 
