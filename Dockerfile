@@ -4,7 +4,7 @@ RUN echo "Dockerfile for Swarm Manager"
 
 # Install packages
 RUN echo "Install Packages"
-RUN apk --no-cache add openrc git bash nano jq go go-ipfs
+RUN apk --no-cache add bash go go-ipfs
 
 # Copy necessary files
 COPY swarm.key /swarm.key

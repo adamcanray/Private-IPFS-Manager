@@ -6,7 +6,6 @@ set -x
 # IPFS init
 echo "[ipfs-setup] Setup IPFS"
 ipfs init
-echo "[ipfs-setup] IPFS initialized with id: ${ipfs id}"
 
 # IPFS swarm key
 echo "[ipfs-setup] Swarm key is ready"
