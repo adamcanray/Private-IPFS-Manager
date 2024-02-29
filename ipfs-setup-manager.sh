@@ -31,6 +31,12 @@ echo "[ipfs-setup] Setup IPFS bootstrap"
 bash ./ipfs-update-bootstrap.sh $CURRENT_NODE_IP_ADDRESS
 echo "[ipfs-setup] IPFS bootstrap updated"
 
+# IPFS Daemon
+echo "[ipfs-setup] Start IPFS daemon"
+bash ./ipfs-daemon.sh
+echo "[ipfs-setup] IPFS daemon started"
+
+
 # IPFS swarm key
 echo "[ipfs-setup] Swarm key is ready"
 cat ./swarm.key > ~/.ipfs/swarm.key
